@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title> Caffeine </title>
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+    crossorigin="anonymous">
+  <!-- Optional theme -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp"
+    crossorigin="anonymous">
+  <!-- Custom CSS styling -->
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+
+<body>
+  <div id="content-wrapper">
+    <header>
+      <nav class="navbar navbar-default">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"
+              aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              </button>
+            <a class="navbar-brand" href="#">Caffeine Meter</a>
+          </div>
+          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+              <li class="active"><a href="#">Home<span class="sr-only">(current)</span></a></li>
+
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main class="container">
+      <div class="row">
+        <div id="project-body" class="col-sm-6">
+
+          <div class="form-group">
+            <label for="" class="form-label">Drink</label>
+            <select name="" id="drink-selector" class="form-control">
+              <option value="Coca-Cola">Coca-Cola</option>
+              <option value="Pepsi">Pepsi</option>
+              <option value="Sprite"> Sprite</option>
+              <option value="Sunkist">Sunkist</option>
+              <option value="Dr Pepper">Dr Pepper</option>
+            </select>
+          </div>
+
+          <button class="btn btn-sm btn-default" id="search-btn">Search</button>
+          <br><br>
+          <div id="details-holder" class="panel panel-default hidden">
+            <div class="panel-heading text-center">
+              <h3 id="drink-name" style="font-weight: bolder"> </h3>
+            </div>
+
+            <div class="panel-body text-center">
+              <br>
+              <img src="" alt="" id="drink-image" width="200">
+              <br>
+              <br>
+              <br>
+              <div class="panel panel-default">
+                <div class="panel-body text-center">
+                  <h3 id="caffeine-amount"> </h3>
+
+                  <div class="meter-holder">
+                    <div id="meter-bar" class="meter-bar">
+                    </div>
+                  </div>
+                  <span style="float: left">0 mg</span>
+                  <span style="float: right">100 mg</span>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="container">
+      <small>&copy; 2017 cristventcode</small>
+    </footer>
+  </div>
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+    crossorigin="anonymous"></script>
+  <script src="/js/action.js"></script>
+</body>
+
+</html>

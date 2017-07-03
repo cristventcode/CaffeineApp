@@ -1,0 +1,30 @@
+footer {
+    text-align: center;
+}
+
+
+.meter-holder{
+    height: 60px;
+    background-color: #efefef;
+    width: 100%;
+    border: 1px solid #f7f7f7;
+    border-radius: 4px;
+}
+
+.meter-bar{
+    background-color: steelblue;
+    height: 56px;
+    width: 0px;
+    margin: 1px 0px 0px 1px;
+    border-radius: 4px;
+}
+
+#project-body{
+    margin: 0px auto;
+    float: none;
+}
+
+h3,h5{
+    padding: 0px;
+    margin: 0px;
+}
