@@ -13,6 +13,7 @@
     crossorigin="anonymous">
   <!-- Custom CSS styling -->
   <link rel="stylesheet" href="/css/styles.css">
+  <link rel="stylesheet" href="/css/circle.css">
 </head>
 
 <body>
@@ -41,7 +42,7 @@
     </header>
     <main class="container">
       <div class="row">
-        <div id="project-body" class="col-sm-6">
+        <div id="project-body" class="col-sm-8">
 
           <div class="form-group">
             <label for="" class="form-label">Drink</label>
@@ -51,6 +52,8 @@
               <option value="Sprite"> Sprite</option>
               <option value="Sunkist">Sunkist</option>
               <option value="Dr Pepper">Dr Pepper</option>
+              <option value="Monster Engery">Monster Engery</option>
+              <option value="Mountain Zevia"> Mountain Zevia </option>
             </select>
           </div>
 
@@ -62,39 +65,43 @@
             </div>
 
             <div class="panel-body text-center">
-              <br>
-              <img src="" alt="" id="drink-image" width="200">
-              <br>
-              <br>
-              <br>
-              <div class="panel panel-default">
-                <div class="panel-body text-center">
-                  <h3 id="caffeine-amount"> </h3>
+              <div class="col-sm-6">
+                <img src="" alt="" id="drink-image" width="200">
+              </div>
 
-                  <div class="meter-holder">
-                    <div id="meter-bar" class="meter-bar">
+              <div id="bar-container" class="col-sm-6">
+                <div class="panel panel-default">
+                  <div class="panel-body text-center">
+                    <h3 id="caffeine-amount" style="font-weight: bolder;"> </h3>
+                    <span style="font-size:12; margin-bottom:15px"> caffine total</span>
+
+                    <div class="meter-holder">
+                      <div id="meter-bar" class="meter-bar">
+                      </div>
                     </div>
-                  </div>
-                  <span style="float: left">0 mg</span>
-                  <span style="float: right">100 mg</span>
+                    <span style="float: left">0 mg</span>
+                    <span style="float: right">300 mg</span>
 
+                  </div>
                 </div>
+
+
               </div>
             </div>
+
           </div>
         </div>
-      </div>
     </main>
     <footer class="container">
       <small>&copy; 2017 cristventcode</small>
     </footer>
-  </div>
-  <!-- Latest compiled and minified JavaScript -->
-  <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
-    crossorigin="anonymous"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
-    crossorigin="anonymous"></script>
-  <script src="/js/action.js"></script>
+    </div>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+      crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+      crossorigin="anonymous"></script>
+    <script src="/js/action.js"></script>
 </body>
 
 </html>

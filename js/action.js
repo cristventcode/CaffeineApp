@@ -5,9 +5,10 @@ var drink = [{
         Image: "https://i5.walmartimages.com/asr/30e93dea-0453-4577-b9e2-914bbec9cee3_2.f3356144782f047ace4e6e64049533a0.jpeg?"
     },
     {
-        Name: "Pepsi Zero Sugar",
-        Amount: 12,
-        Caffeine: 69
+        Name: "Monster Engery",
+        Amount: 16,
+        Caffeine: 280,
+        Image: "https://i5.walmartimages.com/asr/67d13f4f-07cb-45e1-856f-dfa777e58dec_2.b7410fc774e5c4bbb282b722039f52e8.png?odnHeight=180&odnWidth=180&odnBg=FFFFFF"
     },
     {
         Name: "Dr Pepper",
@@ -18,7 +19,8 @@ var drink = [{
     {
         Name: "Mountain Zevia",
         Amount: 12,
-        Caffeine: 55
+        Caffeine: 55,
+        Image: "https://i5.walmartimages.com/asr/052ca4ce-6e92-4a78-b9d0-ce0efbccd1e3_1.efc31ad1c5cb7ac98a67f349c42f67d0.jpeg?odnHeight=180&odnWidth=180&odnBg=FFFFFF"
     },
     {
         Name: "Mountain Dew",
@@ -82,7 +84,8 @@ var drinkSelector = document.getElementById("drink-selector"),
     drinkName = document.getElementById("drink-name"),
     drinkImage = document.getElementById("drink-image"),
     caffeine = document.getElementById("caffeine-amount"),
-    detailsHolder = document.getElementById("details-holder");
+    detailsHolder = document.getElementById("details-holder"),
+    currentPercent;
 
 
 $("#search-btn").click(function () {
@@ -100,8 +103,20 @@ $("#search-btn").click(function () {
         })
     })();
 
+
+    var meterBar = document.getElementById("meter-bar");
+
+    if (amount < 80) {
+        meterBar.style.backgroundColor = "#5cb85c";
+    } else if (amount > 80 && amount < 120) {
+        meterBar.style.backgroundColor = "#f0ad4e";
+    } else if (amount > 120) {
+        meterBar.style.backgroundColor = "#d9534f";
+    }
+
+
     $("#meter-bar").animate({
-        width: (amount) + "%"
+        width: ((amount / 300) * 100) + "%"
     }, 1250);
 
     drinkName.innerText = drinkSelector.value;

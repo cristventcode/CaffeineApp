@@ -4,7 +4,7 @@ footer {
 
 
 .meter-holder{
-    height: 60px;
+    height: 40px;
     background-color: #efefef;
     width: 100%;
     border: 1px solid #f7f7f7;
@@ -12,11 +12,11 @@ footer {
 }
 
 .meter-bar{
-    background-color: steelblue;
-    height: 56px;
+    height: 36px;
     width: 0px;
     margin: 1px 0px 0px 1px;
     border-radius: 4px;
+    transition: background-color 1000ms linear;
 }
 
 #project-body{
@@ -27,4 +27,13 @@ footer {
 h3,h5{
     padding: 0px;
     margin: 0px;
+}
+
+.panel{
+    margin-top: 35px;
+}
+
+#bar-container{
+    padding-left: 0px;
+    padding-right: 0px;
 }
